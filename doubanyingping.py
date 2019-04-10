@@ -10,7 +10,7 @@ def crow(a):
     #  发送请求，获得返回的html代码并保存在变量html中,增加一个浏览器的head和个人的cookie来避免反爬，使用者请替换为自己的cookie
     header = {
         'User-Agent':'Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
-        'Cookie':'__yadk_uid=7UDN1CXew02qd1hQaFTJsXwPoNi843Ae; ll="118099"; douban-fav-remind=1; __guid=223695111.1460768273471938000.1534489522556.1511; viewed="11631786"; bid=BDOJyOsBbLU; gr_user_id=3a01d21c-7e81-4bf8-83a9-62e614836e82; ct=y; _pk_ref.100001.4cf6=%5B%22%22%2C%22%22%2C1554862635%2C%22https%3A%2F%2Fwww.douban.com%2F%22%5D; ap_v=0,6.0; dbcl2="184934189:xQSFmv00qjM"; ck=KX6w; monitor_count=5; _pk_id.100001.4cf6=46e06ba1e0cdd1bd.1446183667.41.1554863091.1554716371.; _pk_ses.100001.4cf6=*; __utma=30149280.946493499.1554709750.1554716352.1554862629.4; __utmb=30149280.9.5.1554863063578; __utmc=30149280; __utmz=30149280.1554862629.4.2.utmcsr=baidu|utmccn=(organic)|utmcmd=organic; __utmv=30149280.18493; __utma=223695111.522980972.1446183667.1554716371.1554862635.43; __utmb=223695111.0.10.1554862635; __utmc=223695111; __utmz=223695111.1554862635.43.29.utmcsr=douban.com|utmccn=(referral)|utmcmd=referral|utmcct=/; push_noty_num=0; push_doumail_num=0; _vwo_uuid_v2=0C7BAE388631777C5FE4F5D2B9751FBB|dc23817ae800d39c9857d52e215b5268',
+        'Cookie':‘引号内内容替换为你的cookie’
         }
     req =urllib.request.Request(url1,headers=header)
     html=request.urlopen(req).read().decode('utf-8')
